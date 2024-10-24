@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./formfile.html">
+
+        <!--
+            FORM: 
+                - An HTML form is used to collect user input.
+                - It is represented by <form> tag containing different types of input elements in it.
+                - Action attribute helps the form to redirect the paage to another , if submitted through the button in the form.
+        -->
+
+        <style>
+            #name{
+
+            }
+        </style>
+        <label for="name">Name</label>
+        <!--
+            Label Tag: 
+                - A label tag is used to disclose a text in the form, reffering to the input field.
+                - "for" key in attribute is named with the input elements id to find the respective field to it.
+
+        -->
+              
+        <input type ="text" id="name" placeholder="Full Name">
+        <!--
+            INPUT TAG:
+                    - Having an input field to store the users data.
+                    - Default input is of 'text' type.
+                    - Attributes:
+                            - required :  Makes the input field mandatory.
+                            - disabled :  Makes the input field inactive.
+                            - checked  :  Makes the selected checkbox checked.
+                            - placeholder : Helps the user to understand about an input field.
+
+                TYPES:
+                    - Text (default state)
+                    - Number
+                    - date 
+                    - password
+                    - email
+                    - color
+                    - url
+                    - file
+                    - time 
+                    - datetime
+                    - radio
+                    - Buttions
+                        - Submit
+                        - Reset
+        -->
+         <br>
+
+        <label for="num">Ph-no Number</label>
+        <input type="number" id="num" placeholder="phone Number" max="9">
+
+        <br><br>
+
+        <label for="date">Ph-no Number</label>
+        <input type="date" id="date" placeholder="Date of Birth">
+
+        <br><br>
+
+        <label for="pass">Password<span style="color: red; font-size: 15px;">*<span></label>
+        <input type="password" id="pass" placeholder="Password">
+
+        <br><br>
+
+        <label for="mail">Email</label>
+        <input type="email" id="mail" placeholder="Email">
+
+        <br><br>
+
+        <label>Gender:</label>
+            <input type="radio" name="gender" id="male" Value="Male">
+                <label for="Male">Male</label>
+            <input type="radio" name="gender" id="female" Value="Female">
+                <label for="female">Female</label>
+            <input type="radio" name="gender" id="others" Value="Other">
+                <label for="Others">Other</label>
+    
+        <br><br>
+
+        <label>Language</label>
+            <input type="checkbox" name="language" id="english" Value="eng">
+                 <label for="eng">English</label>
+            <input type="checkbox" name="language" id="hin" Value="hindi">
+                 <label for="hin">Hindi</label>
+            <input type="checkbox" name="language" id="beng" Value="bengali">
+                <label for="beng">Bengali</label>
+
+            <br><br>
+
+        <label for="count">country:</label>
+            <select id="count">
+                <option selected disabled>Please select a country</option>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Egypt">Egypt</option>
+            </select>
+            
+            <br><br>
+
+        <button>Submit-btn</button>
+
+        <input type="submit" value="Submit-imp">
+
+        <input type="reset" value="Reset">
+
+    
+
+    </form>
+</body>
+</html>
